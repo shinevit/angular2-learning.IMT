@@ -1,0 +1,47 @@
+
+.calc {
+	font-family: 'Roboto';
+	font-style: normal;
+	position: relative;
+    float: left;
+    left: 50%;
+}
+
+.calc .inner {
+	position: relative;
+    left: -50%;
+    float: left;
+	border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
+}
+
+.calc input {
+	height: 25px;
+	font-size: 25px;
+	font-weight: bold;
+	width: 121px;
+	padding: 8px;
+}
+
+.calc #equals {
+	font-size: 25px;
+	width: 320px;
+	height: 50px;
+}
+
+.calc .result_box #calc_result {
+	text-align: left;
+	width: 315px;
+	font-size: 15px;
+}
+.calc .result_box #warn {
+	text-align: left;
+	width: 315px;
+	font-size: 15px;
+	color: red;
+}
+
+
+
