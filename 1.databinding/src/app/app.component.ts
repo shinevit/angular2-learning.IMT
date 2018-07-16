@@ -19,62 +19,58 @@ export class AppComponent {
 
   number_a: number = 0;
   number_b: number = 0;
-  hiddenRes: boolean  = false;
-  hiddenWarn: boolean = false;
-  warnMessage: string = "Warning! Please enter the all numbers";
+  showResult: boolean;
+  warnMessage = 'Warning! Please enter the all numbers';
 
-  
+
 
   onClickEquals() {
-    if(!this.number_a && !this.number_b) {
-    	this.setResultVisible(false);
-    	return;
+    if (!this.number_a && !this.number_b) {
+      this.setResultVisible(false);
+      return;
     }
     this.setResultVisible(true);
   }
 
   onInputHandle(evt) {
-    let inputId = evt.target.id
+    const inputId = evt.target.id;
 
     this.filterInput(evt);
 
     this.onChange(evt);
 
-  	if(inputId=='num_a') {
-  		this.number_a = +evt.target.value;
-  		return;
-  	}
-	this.number_b = +evt.target.value;
+    if (inputId === 'num_a') {
+      this.number_a = +evt.target.value;
+      return;
+    }
+    this.number_b = +evt.target.value;
   }
 
 
 
   private onChange(evt) {
-  	let inputId = evt.target.id
+    const inputId = evt.target.id;
 
-  	if(String.isNullOrEmpty(evt.target.value)) {
-    	this.setResultVisible(false);
-    	#equals.disabled = true;
-    	if(inputId=='num_a') {
-	  		this.number_a = undefined;
-	  		return;
-	  	}
-		this.number_b = undefined;
-    	return;
+    if (String.isNullOrEmpty(evt.target.value)) {
+      this.setResultVisible(false);
+      // #equals.disabled = true;
+      if (inputId === 'num_a') {
+        this.number_a = undefined;
+        return;
+      }
+      this.number_b = undefined;
+      return;
     }
-    
-    #equals.disabled = false;
-    this.hiddenWarn = false;
-    this.hiddenRes = false;
+    // #equals.disabled = false;
+    this.showResult = false;
   }
 
   private setResultVisible(value: boolean) {
-	this.hiddenRes = value;
-	this.hiddenWarn = !this.hiddenRes;
+    this.showResult = value;
   }
 
   private filterInput(evt) {
-  	evt.target.value = evt.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+    evt.target.value = evt.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
   }
-  
+
 }

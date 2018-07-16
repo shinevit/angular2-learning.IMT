@@ -3,7 +3,7 @@
   <h1>
     {{ title }}
   </h1>
-  
+
   <br>
   <div width="60%" class="calc">
   	<div class="inner">
@@ -19,7 +19,7 @@
 		  </span>
 	  </div>
 	  <br>
-	  
+
 	  <div>
 	  	<button id="equals" title="calculate" tabindex="3" (click)="onClickEquals()">=</button>
 	  </div>
@@ -27,8 +27,8 @@
 	  <br>
 
 	  <div class="result_box">
-		  <p id="calc_result" [hidden]="!hiddenRes" >Result: {{ number_a + number_b }}</p>
-		  <p id="warn" [hidden]="!hiddenWarn" >Result: {{ warnMessage }}</p>
+		  <p id="calc_result" [hidden]="!showResult" >Result: {{ number_a + number_b }}</p>
+		  <p id="warn" [hidden]="showResult" >Result: {{ warnMessage }}</p>
 	  </div>
   </div>
   <div>
