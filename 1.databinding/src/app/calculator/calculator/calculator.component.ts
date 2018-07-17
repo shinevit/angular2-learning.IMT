@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'my-calculator',
@@ -21,7 +21,7 @@ export class CalculatorComponent implements OnInit {
 
   onOperandValueChange(operandName: string, value: number) {
     this[operandName] = value; // call property of this CalculatorComponent
-    this.caclulateResult();
+    // this.caclulateResult();
   }
 
   caclulateResult() {
