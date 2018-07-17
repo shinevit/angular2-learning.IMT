@@ -1,0 +1,11 @@
+<app-operand
+    [label]="'A'"
+    [value]="operandA"
+    (onValueChange) = "onOperandValueChange('operandA', $event)"
+    ></app-operand>
+<app-operand
+    [label]="'B'"
+    [value]="operandB"
+    (onValueChange) = "onOperandValueChange('operandB', $event)"></app-operand>
+<button (click)="onCaclulateBtnClick()" tip='Calculate'>=</button>
+<div>Result: {{result}}</div>
