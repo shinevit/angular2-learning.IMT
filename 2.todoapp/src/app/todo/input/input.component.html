@@ -1,0 +1,10 @@
+<form onsubmit="return false;">
+  <p class="input_block">
+      <span class="warning" [ngClass]="{'hidden': warningHide}">Text is required<br></span>
+      <input type="text" placeholder="type note"
+             [(ngModel)] ="todoText"
+             [ngModelOptions]="{standalone: true}"
+      />
+      <button (click)="onAddBtnClick()">+</button>
+  </p>
+</form>

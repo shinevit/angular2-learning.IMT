@@ -7,7 +7,6 @@ module String {
     }
 }
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,6 +16,7 @@ export class AppComponent {
 
   title = 'My dummy calculator';
 
+<<<<<<< HEAD
   number_a: number = 0;
   number_b: number = 0;
   hiddenRes: boolean  = false;
@@ -77,4 +77,6 @@ export class AppComponent {
     evt.target.value = evt.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
   }
 
+=======
+>>>>>>> dev
 }

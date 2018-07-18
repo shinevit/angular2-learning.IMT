@@ -1,0 +1,22 @@
+.appTitle {
+  margin: 50px auto;
+  width:200px;
+  height:200px;
+  border-radius:100px;
+  font-size:22px;
+  line-height:200px;
+  text-align:center;
+  text-shadow: 0px 2px white;
+  background:pink;
+}
+
+.todo_external {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.todo_internal {
+  position: relative;
+  margin: auto 0;
+  width: 500px;
+}

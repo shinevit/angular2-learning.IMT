@@ -1,0 +1,10 @@
+<p>
+  <span class="id" [ngStyle]="{'color': randomColor}">
+    <span>{{ item.id }}</span>
+    <span class="dot">.</span>
+  </span>
+  <span class="item" [ngClass]="{'completed': isTaskCompleted()}" (click)="onItemClick(item)">{{item.description}}</span>
+  <button id="{{ item.id }}" class="close" style="float: right;" type="button" (click)="onBtnDeleteClick(item)" >
+      <span class="x-button">×</span>
+  </button>
+</p>
