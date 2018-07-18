@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -7,7 +7,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  @Input()
   todoText: string = '';
 
   @Output("addNewTodo")
@@ -20,10 +19,6 @@ export class InputComponent implements OnInit {
 
 
   ngOnInit() {
-  }
-
-  onChangeText(evt) {
-    this.todoText = evt.target.value;
   }
 
   onAddBtnClick() {
