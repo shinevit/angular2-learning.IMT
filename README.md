@@ -3,9 +3,9 @@ Learning projects at IMT academy
 
 
 ## Contents 
-<li>
-<ul>Introduction. DataBinding - 1.databinding</ul>
-<ul>Components & Directives - 2.todoapp</ul>
-</li>
+<ul>
+<li>Introduction. DataBinding - 1.databinding</li>
+<li>Components & Directives - 2.todoapp</li>
+</ul>
  
 
