@@ -1,0 +1,17 @@
+
+<div class="todo_external">
+  <div class="todo_internal">
+
+      <div class="appTitle">
+          <h2>{{title}}</h2>
+      </div>
+
+      <app-todo-list
+          [onNewTodoText]="newTodoText"
+          ></app-todo-list>
+
+      <app-input
+          (addNewTodo)="onAddNewTodo($event)"
+          ></app-input>
+  </div>
+</div>

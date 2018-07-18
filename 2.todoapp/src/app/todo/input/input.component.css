@@ -1,0 +1,30 @@
+.input_block {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.input_block input {
+  height: 24px;
+  font-size: 20px;
+}
+.input_block button {
+  line-height: 24px;
+  margin:0px;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+
+.warning {
+  color: red;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.hidden {
+  display: none;
+}

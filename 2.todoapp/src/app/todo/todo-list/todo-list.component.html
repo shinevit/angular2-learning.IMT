@@ -1,3 +1,15 @@
-<p>
-  todo-list works!
-</p>
+
+
+<div class="totalTasks"><div class="counter">My {{items.length}} tasks:</div></div>
+<div class="list">
+
+  <div *ngFor="let el of items; let idx = index" class="line">
+    <app-todo-item
+        [item]="el"
+        [index]="idx"
+        (deleteItem)="onDeleteItem($event)"
+        (clickItem)="onClickItem($event)"
+        ></app-todo-item>
+  </div>
+
+</div>
